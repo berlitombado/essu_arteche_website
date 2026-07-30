@@ -1,196 +1,320 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Profile | ESSU-AEC</title>
-    <link rel="stylesheet" href="profile.css">
-</head>
-<body>
-<div class="container">
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+
+  <body>
+    <!-- ========================================= -->
     <!-- HEADER -->
-    <header>
-        <h1>Student Profile</h1>
-        <p>Eastern Samar State University - Arteche Extension Campus</p>
+    <!-- ========================================= -->
+
+    <header class="page-header">
+      <h1>Student Profile</h1>
+      <p>
+        This page contains the profile information of a student enrolled at
+        <strong
+          >Eastern Samar State University – Arteche Extension Campus</strong
+        >.
+      </p>
     </header>
+
+    <!-- ========================================= -->
     <!-- NAVIGATION -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <!-- ========================================= -->
+
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <!-- PROFILE CARD -->
-    <section class="profile-card">
-        <div class="profile-image">
-            <img src="./assets/images/irene.jpg"
-                 alt="Student Picture">
-        </div>
-        <div class="profile-details">
-            <h2>Personal Information</h2>
-            <table>
-                <tr>
-                    <th>Full Name</th>
-                    <td>Arayan Irene Marie</td>
-                </tr>
-                <tr>
-                    <th>Student Number</th>
-                    <td>23-05081</td>
-                </tr>
-                <tr>
-                    <th>Program</th>
-                    <td>Bachelor of Science in Information Technology</td>
-                </tr>
-                <tr>
-                    <th>Year Level</th>
-                    <td>Fourth Year</td>
-                </tr>
-                <tr>
-                    <th>Email</th>
-                    <td>arayanirene@gmail.com</td>
-                </tr>
-                <tr>
-                    <th>Address</th>
-                    <td>Brgy. Beri, Arteche, Eastern Samar</td>
-                </tr>
-            </table>
-        </div>
-    </section>
-    <!-- CONTENT START -->
-    <div class="content">
-        <div class="left-column">
-            <!-- BIOGRAPHY CARD -->
-            <section class="card">
-                <h2>Biography</h2>
-                <p>
-                    Irene Marie Arayan is a fourth-year Bachelor of Science in
-                    Information Technology student at Eastern Samar State University –
-                    Arteche Extension Campus. She is passionate about web development,
-                    programming, database management, networking, and creating innovative
-                    technology solutions that can help the community.
-                </p>
-            </section>
- <!-- SKILLS -->
-            <section class="card">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Microsoft Office</li>
-                    <li>Problem Solving</li>
-                    <li>Networking</li>
-                </ul>
-            </section>
-            <!-- EDUCATIONAL BACKGROUND -->
-            <section class="card">
-                <h2>Educational Background</h2>
-                <ol>
-                    <li>Elementary</li>
-                    <li>Junior High School</li>
-                    <li>Senior High School</li>
-                    <li>College</li>
-                </ol>
-            </section>
-        </div>    
-        <!-- RIGHT COLUMN -->
-        <div class="right-column">
-            <!-- USEFUL LINKS -->
-            <section class="card">
-                <h2>Useful Links</h2>
-                <ul>
-                    <li><a href="index.html"> Home</a></li>
-                    <li><a href="about.html"> About</a></li>
-                    <li><a href="academics.html"> Academics</a></li>
-                    <li><a href="contact.html"> Contact</a></li>
-                    <li><a href="https://www.google.com" target="_blank">
-                         Visit Google
-                    </a></li>
-                </ul>
-            </section>
-            <!-- CURRENT SUBJECTS -->
-            <section class="card">
-                <h2>Current Subjects</h2>
-                <table class="subject-table">
-                    <tr>
-                        <th>Course Code</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>IT413</td>
-                        <td>Web Systems and Technologies</td>
-                    </tr>
-                    <tr>
-                        <td>IT411</td>
-                        <td>Capstone Project and Research 2</td>
-                    </tr>
-                    <tr>
-                        <td>IT414</td>
-                        <td>Data Visualization</td>
-                    </tr>
-                    <tr>
-                        <td>IT412</td>
-                        <td>Special Topics in Information Technology</td>
-                    </tr>
-                </table>
-            </section>  
-        </div>
-    </div>
-    <!-- CONTACT FORM -->
-    <section class="contact-card">
-        <h2>Contact the Student</h2>
-        <form>
-            <label>Full Name</label>
+
+    <!-- ========================================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ========================================= -->
+
+    <main class="main-container">
+      <section class="middle-section">
+        <!-- Biography -->
+
+        <section class="biography">
+          <h2>Biography</h2>
+
+          <img
+            src="./assets/images/myprofile.jpg"
+            alt="Student Picture"
+            width="180"
+            height="180"
+          />
+
+          <p><strong>Full Name:</strong> Berli N. Tombado</p>
+
+          <p><strong>Student Number:</strong> 23-04834</p>
+
+          <p>
+            <strong>Program:</strong> Bachelor of Science in Information
+            Technology
+          </p>
+
+          <p><strong>Year Level:</strong> Fourth Year</p>
+
+          <p><strong>Email:</strong> berlitombado0@email.com</p>
+
+          <p>
+            <strong>Address:</strong> Barangay Catumsan, Arteche, Eastern Samar,
+            Philippines
+          </p>
+
+          <br />
+
+          <h2>About Me</h2>
+
+          <p>
+            Berli Tombado is currently pursuing a Bachelor of Science in
+            Information Technology. He is passionate about expanding his
+            knowledge in web development, programming, database management, and
+            networking.
+          </p>
+
+          <br />
+
+          <h2>Skills</h2>
+
+          <ul>
+            <li>Leadership</li>
+            <li>Critical Thinking</li>
+            <li>Organization</li>
+            <li>Problem Solving</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+
+          <h2>Educational Background</h2>
+
+          <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+              <tr>
+                <th>Level</th>
+                <th>School</th>
+                <th>Address</th>
+                <th>School Year Graduated</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Elementary</td>
+                <td>Catumsan Integrated School</td>
+                <td>Barangay Catumsan, Arteche, Eastern Samar</td>
+                <td>2016–2017</td>
+              </tr>
+
+              <tr>
+                <td>Junior High School</td>
+                <td>Arteche National High School</td>
+                <td>Poblacion, Arteche, Eastern Samar</td>
+                <td>2020–2021</td>
+              </tr>
+
+              <tr>
+                <td>Senior High School</td>
+                <td>Arteche National High School</td>
+                <td>Barangay Rawis, Arteche, Eastern Samar</td>
+                <td>2022–2023</td>
+              </tr>
+
+              <tr>
+                <td>College</td>
+                <td>Eastern Samar State University – Arteche Campus</td>
+                <td>Barangay Balud, Arteche, Eastern Samar</td>
+                <td>Expected: 2026–2027</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Current Subjects -->
+
+        <section class="subjects">
+          <h2>Current Subjects</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Course Code</th>
+                <th>Description</th>
+                <th>Instructor</th>
+                <th>Schedule</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>IT 413</td>
+                <td>Web Systems and Technologies</td>
+                <td>Mr. A. Morallos</td>
+                <td>TTH 10:30–12:30</td>
+              </tr>
+
+              <tr>
+                <td>IT 411</td>
+                <td>Capstone Project</td>
+                <td>Mr. E. Borata</td>
+                <td>TTH 7:30–10:30</td>
+              </tr>
+
+              <tr>
+                <td>Elective 3</td>
+                <td>Data Visualization</td>
+                <td>Mr. F. Amoyan</td>
+                <td>MW 7:30–12:30</td>
+              </tr>
+
+              <tr>
+                <td>IT 412</td>
+                <td>Special Topics in IT</td>
+                <td>Mr. E. Borata</td>
+                <td>MW 3:30–5:00</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+
+      <!-- Contact Form -->
+
+      <section class="contact-form">
+        <h2>Contact Form</h2>
+
+        <form id="contactForm">
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
             <input
-                type="text"
-                placeholder="Enter your full name">
-            <label>Email Address</label>
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Enter your full name"
+            />
+          </div>
+
+          <!-- Email Address -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
             <input
-                type="email"
-                placeholder="Enter your email">
-            <label>Course</label>
-            <select>
-                <option>BSIT</option>
-                <option>BSEd</option>
-                <option>BEEd</option>
-                <option>BSHM</option>
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+            />
+          </div>
+
+          <!-- Course -->
+          <div class="form-group">
+            <label for="course">Course</label>
+
+            <select id="course" name="course">
+              <option value="">Select Course</option>
+              <option value="BSIT">BSIT</option>
+              <option value="BSEd">BSEd</option>
+              <option value="BEEd">BEEd</option>
+              <option value="BSHM">BSHM</option>
             </select>
+          </div>
+
+          <!-- Gender -->
+          <div class="form-group">
             <label>Gender</label>
+
             <div class="radio-group">
-                <label><input type="radio" name="gender"> Male</label>
-                <label><input type="radio" name="gender"> Female</label>
+              <label>
+                <input type="radio" name="gender" value="Male" />
+                Male
+              </label>
+
+              <label>
+                <input type="radio" name="gender" value="Female" />
+                Female
+              </label>
             </div>
+          </div>
+
+          <!-- Interests -->
+          <div class="form-group">
             <label>Interests</label>
+
             <div class="checkbox-group">
-                <label><input type="checkbox"> Programming</label>
-                <label><input type="checkbox"> Networking</label>
-                <label><input type="checkbox"> Multimedia</label>
+              <label>
+                <input type="checkbox" name="interests" value="Programming" />
+                Programming
+              </label>
+
+              <label>
+                <input type="checkbox" name="interests" value="Networking" />
+                Networking
+              </label>
+
+              <label>
+                <input type="checkbox" name="interests" value="Multimedia" />
+                Multimedia
+              </label>
             </div>
-            <label>Message</label>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="message">Message</label>
+
             <textarea
-                rows="5"
-                placeholder="Write your message here"></textarea>
-            <button type="submit">
-                Submit
-            </button>
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+
+          <!-- Form Buttons -->
+          <div class="form-actions">
+            <input type="submit" value="Submit" />
+
+            <input type="reset" value="Clear" />
+          </div>
         </form>
-    </section>
-    <!-- SCHOOL LOCATION -->
-    <section class="location">
+      </section>
+
+      <!-- School Location -->
+
+      <section class="location">
         <h2>School Location</h2>
+
         <iframe
-            src="https://www.google.com/maps?q=Eastern+Samar+State+University+Arteche&output=embed"
-            allowfullscreen=""
-            loading="lazy">
+          src="https://www.google.com/maps?q=Eastern+Samar+State+University+Arteche&output=embed"
+          title="ESSU Map"
+        >
         </iframe>
-    </section>
+      </section>
+    </main>
+
     <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Eastern Samar State University - Arteche Extension Campus</p>
-        <p>Created by Irene Marie Arayan</p>
+
+    <footer class="page-footer">
+      <p>&copy; 2026 <span>ESSU – Arteche Extension Campus</span></p>
+      <p><strong>Berli N. Tombado</strong> | BSIT 4th Year</p>
     </footer>
-</div>
-</body>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+  </body>
 </html>
